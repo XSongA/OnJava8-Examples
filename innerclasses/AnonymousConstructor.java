@@ -14,7 +14,8 @@ abstract class Base {
 public class AnonymousConstructor {
   public static Base getBase(int i) {
     return new Base(i) {
-      { System.out.println(
+      {
+        System.out.println(
         "Inside instance initializer"); }
       @Override public void f() {
         System.out.println("In anonymous f()");

@@ -3,7 +3,9 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Configure and execute the greenhouse system
-import innerclasses.controller.*;
+//import innerclasses.controller.*;
+
+import controller.Event;
 
 public class GreenhouseController {
   public static void main(String[] args) {

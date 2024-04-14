@@ -8,6 +8,7 @@ public class DotNew {
   public class Inner {}
   public static void main(String[] args) {
     DotNew dn = new DotNew();
+    DotNew.Inner test = dn.new Inner();
     DotNew.Inner dni = dn.new Inner();
   }
 }

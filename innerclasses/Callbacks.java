@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // Using inner classes for callbacks
 // {java innerclasses.Callbacks}
-package innerclasses;
+// package innerclasses;
 
 interface Incrementable {
   void increment();
@@ -13,7 +13,8 @@ interface Incrementable {
 // Very simple to just implement the interface:
 class Callee1 implements Incrementable {
   private int i = 0;
-  @Override public void increment() {
+  @Override
+  public void increment() {
     i++;
     System.out.println(i);
   }
@@ -28,7 +29,7 @@ class MyIncrement {
 
 // If your class must implement increment() in
 // some other way, you must use an inner class:
-class Callee2 extends MyIncrement {
+class Callee2 extends MyIncrement{
   private int i = 0;
   @Override public void increment() {
     super.increment();
