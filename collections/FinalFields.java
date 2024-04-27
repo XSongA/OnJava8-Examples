@@ -7,6 +7,6 @@ import java.util.*;
 
 record FinalFields(int i) {
   int timesTen() { return i * 10; }
-  // void tryToChange() { i++; } // Error:
+//   void tryToChange() { i++; } // Error:
   // cannot assign a value to final variable i
 }

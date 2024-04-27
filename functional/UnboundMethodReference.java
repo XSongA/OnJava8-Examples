@@ -18,7 +18,8 @@ interface TransformX {
 
 public class UnboundMethodReference {
   public static void main(String[] args) {
-    // MakeString ms = X::f;                // [1]
+    MakeString ms1 = () -> new X().f();
+//     MakeString ms = X::f;                       // [1]
     TransformX sp = X::f;
     X x = new X();
     System.out.println(sp.transform(x));    // [2]

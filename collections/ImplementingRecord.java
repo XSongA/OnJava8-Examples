@@ -11,4 +11,9 @@ interface Star {
 
 record RedDwarf(double brightness) implements Star {
   @Override public double density() { return 100.0; }
+
+//  @Override
+//  public double brightness() {
+//    return brightness;
+//  }
 }

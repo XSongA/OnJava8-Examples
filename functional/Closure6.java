@@ -9,7 +9,7 @@ public class Closure6 {
     int i = 0;
     i++;
     x++;
-    final int iFinal = i;
+    int iFinal = i;
     final int xFinal = x;
     return () -> xFinal + iFinal;
   }

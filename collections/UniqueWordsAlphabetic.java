@@ -10,7 +10,7 @@ public class UniqueWordsAlphabetic {
   public static void
   main(String[] args) throws Exception {
     List<String> lines = Files.readAllLines(
-      Paths.get("SetOperations.java"));
+      Paths.get("/Users/zss/Projects/OnJava8-Examples/collections/SetOfInteger.java"));
     Set<String> words =
       new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
     for(String line : lines)

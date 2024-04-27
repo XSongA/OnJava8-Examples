@@ -2,7 +2,10 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
+//import reflection.pets.*;
+import reflection.*;
 import reflection.pets.*;
+
 import java.util.*;
 
 public class ListFeatures {
@@ -56,6 +59,7 @@ public class ListFeatures {
     System.out.println("20: " + pets.isEmpty());
     pets.addAll(new PetCreator().list(4));
     System.out.println("21: " + pets);
+
     Object[] o = pets.toArray();
     System.out.println("22: " + o[3]);
     Pet[] pa = pets.toArray(new Pet[0]);

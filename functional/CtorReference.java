@@ -6,9 +6,14 @@
 class Dog {
   String name;
   int age = -1; // For "unknown"
-  Dog() { name = "stray"; }
-  Dog(String nm) { name = nm; }
-  Dog(String nm, int yrs) { name = nm; age = yrs; }
+  Dog() {
+    System.out.println("0");
+    name = "stray";
+  }
+  Dog(String nm) {
+    System.out.println("1");name = nm; }
+  Dog(String nm, int yrs) {
+    System.out.println("2");nm = nm; age = yrs; }
 }
 
 interface MakeNoArgs {
@@ -29,6 +34,8 @@ public class CtorReference {
     Make1Arg m1a = Dog::new;          // [2]
     Make2Args m2a = Dog::new;         // [3]
 
+
+//    System.out::println;
     Dog dn = mna.make();
     Dog d1 = m1a.make("Comet");
     Dog d2 = m2a.make("Ralph", 4);

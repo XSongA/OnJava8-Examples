@@ -5,8 +5,7 @@
 import java.util.function.*;
 
 public class FunctionComposition {
-  static Function<String, String>
-    f1 = s -> {
+  static Function<String, String> f1 = s -> {
       System.out.println(s);
       return s.replace('A', '_');
     },

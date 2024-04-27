@@ -19,6 +19,7 @@ public class RandomWords implements Supplier<String> {
       for(String word : line.split("[ .?,]+"))
         words.add(word.toLowerCase());
     }
+    System.out.println("111");
   }
   @Override public String get() {
     return words.get(rand.nextInt(words.size()));
@@ -30,7 +31,8 @@ public class RandomWords implements Supplier<String> {
   public static void
   main(String[] args) throws Exception {
     System.out.println(
-      Stream.generate(new RandomWords("Cheese.dat"))
+      // /Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat
+      Stream.generate(new RandomWords("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat"))
         .limit(10)
         .collect(Collectors.joining(" ")));
   }

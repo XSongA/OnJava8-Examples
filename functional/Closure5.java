@@ -6,10 +6,10 @@
 import java.util.function.*;
 
 public class Closure5 {
-  IntSupplier makeFun(int x) {
-    int i = 0;
-    i++;
-    x++;
+  IntSupplier makeFun(final int x) {
+    final int i = 0;
+//    i++;
+//    x++;
     return () -> x + i;
   }
 }

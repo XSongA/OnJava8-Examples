@@ -18,6 +18,8 @@ interface NotFunctional {
   String goodbye(String arg);
   String hello(String arg);
 }
+ */
+/*
 Produces error message:
 NotFunctional is not a functional interface
 multiple non-overriding abstract methods
@@ -33,7 +35,7 @@ public class FunctionalAnnotation {
       new FunctionalAnnotation();
     Functional f = fa::goodbye;
     FunctionalNoAnn fna = fa::goodbye;
-    // Functional fac = fa; // Incompatible
+//    Functional fac = fa; // Incompatible
     Functional fl = a -> "Goodbye, " + a;
     FunctionalNoAnn fnal = a -> "Goodbye, " + a;
   }

@@ -8,13 +8,14 @@ import java.util.*;
 public class ListIteration {
   public static void main(String[] args) {
     List<Pet> pets = new PetCreator().list(8);
+//    System.out.println(pets);
     ListIterator<Pet> it = pets.listIterator();
     while(it.hasNext())
       System.out.print(it.next() +
         ", " + it.nextIndex() +
         ", " + it.previousIndex() + "; ");
     System.out.println();
-    // Backwards:
+//    // Backwards:
     while(it.hasPrevious())
       System.out.print(it.previous().id() + " ");
     System.out.println();

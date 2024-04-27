@@ -5,7 +5,7 @@
 import java.util.*;
 import java.util.function.*;
 
-public class Closure8 {
+  public class Closure8 {
   Supplier<List<Integer>> makeFun() {
     final List<Integer> ai = new ArrayList<>();
     ai.add(1);

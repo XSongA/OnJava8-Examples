@@ -6,11 +6,11 @@
 
 record PlusTen(int x) {
   PlusTen {
-    x += 10;
+//    x += 10;
   }
   // Adjustment to field can only happen in
   // the constructor. Still not legal:
-  // void mutate() { x += 10; }
+//   void mutate() { x += 10; }
   public static void main(String[] args) {
     System.out.println(new PlusTen(10));
   }

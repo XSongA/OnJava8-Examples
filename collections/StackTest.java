@@ -3,6 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
+import java.util.Stack;
 
 public class StackTest {
   public static void main(String[] args) {
@@ -11,6 +12,8 @@ public class StackTest {
       stack.push(s);
     while(!stack.isEmpty())
       System.out.print(stack.pop() + " ");
+
+//    new Stack<>()
   }
 }
 /* Output:

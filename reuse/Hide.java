@@ -5,7 +5,7 @@
 // Overloading a base-class method name in a derived
 // class does not hide the base-class versions
 
-class Homer {
+abstract class Homer {
   char doh(char c) {
     System.out.println("doh(char)");
     return 'd';
@@ -14,6 +14,8 @@ class Homer {
     System.out.println("doh(float)");
     return 1.0f;
   }
+
+  abstract void doh(Milhouse m);
 }
 
 class Milhouse {}

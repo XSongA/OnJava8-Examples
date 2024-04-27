@@ -12,6 +12,13 @@ public class Randoms {
       .limit(7)
       .sorted()
       .forEach(System.out::println);
+    System.out.println();
+    new Random(10)
+            .ints(10,20)
+            .distinct()
+            .limit(5)
+            .sorted()
+            .forEach(System.out::println);
   }
 }
 /* Output:

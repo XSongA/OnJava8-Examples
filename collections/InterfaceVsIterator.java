@@ -32,6 +32,7 @@ public class InterfaceVsIterator {
     display(petSet.iterator());
     System.out.println(petMap);
     System.out.println(petMap.keySet());
+//    display();
     display(petMap.values());
     display(petMap.values().iterator());
   }
