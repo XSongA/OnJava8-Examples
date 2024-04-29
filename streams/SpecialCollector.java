@@ -9,10 +9,13 @@ public class SpecialCollector {
   public static void
   main(String[] args) throws Exception {
     ArrayList<String> words =
-      FileToWords.stream("Cheese.dat")
-        .collect(ArrayList::new,
+      FileToWords.stream("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat")
+        .collect(
+                ArrayList::new,
                  ArrayList::add,
-                 ArrayList::addAll);
+                 ArrayList::addAll
+        );
+    System.out.println(words);
     words.stream()
       .filter(s -> s.equals("cheese"))
       .forEach(System.out::println);

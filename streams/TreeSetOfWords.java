@@ -10,7 +10,7 @@ public class TreeSetOfWords {
   public static void
   main(String[] args) throws Exception {
     Set<String> words2 =
-      Files.lines(Paths.get("TreeSetOfWords.java"))
+      Files.lines(Paths.get("/Users/zss/Projects/OnJava8-Examples/streams/TreeSetOfWords.java"))
         .flatMap(s -> Arrays.stream(s.split("\\W+")))
         .filter(s -> !s.matches("\\d+")) // No numbers
         .map(String::trim)

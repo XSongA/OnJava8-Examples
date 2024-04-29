@@ -20,6 +20,7 @@ public class Matching {
         n -> n < val));
   }
   public static void main(String[] args) {
+
     show(Stream::allMatch, 10);
     show(Stream::allMatch, 4);
     show(Stream::anyMatch, 2);

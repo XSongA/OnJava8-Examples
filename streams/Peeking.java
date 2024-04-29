@@ -6,7 +6,7 @@
 class Peeking  {
   public static void
   main(String[] args) throws Exception {
-    FileToWords.stream("Cheese.dat")
+    FileToWords.stream("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat")
       .skip(21)
       .limit(4)
       .map(w -> w + " ")

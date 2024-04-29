@@ -7,11 +7,11 @@ import java.util.stream.*;
 public class FileToWordsTest {
   public static void
   main(String[] args) throws Exception {
-    FileToWords.stream("Cheese.dat")
+    FileToWords.stream("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat")
       .limit(7)
       .forEach(s -> System.out.format("%s ", s));
     System.out.println();
-    FileToWords.stream("Cheese.dat")
+    FileToWords.stream("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat")
       .skip(7)
       .limit(2)
       .forEach(s -> System.out.format("%s ", s));

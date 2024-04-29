@@ -22,7 +22,7 @@ public class FileToWordsRegexp {
   public static void
   main(String[] args) throws Exception {
     FileToWordsRegexp fw =
-      new FileToWordsRegexp("Cheese.dat");
+      new FileToWordsRegexp("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat");
     fw.stream()
       .limit(7)
       .map(w -> w + " ")
