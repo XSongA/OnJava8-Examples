@@ -11,7 +11,8 @@ public class WhoCalled {
       throw new Exception();
     } catch(Exception e) {
       for(StackTraceElement ste : e.getStackTrace())
-        System.out.println(ste.getMethodName());
+//        System.out.println(ste.getMethodName());
+        System.out.println(ste);
     }
   }
   static void g() { f(); }

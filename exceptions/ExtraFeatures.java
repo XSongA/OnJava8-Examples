@@ -39,6 +39,8 @@ public class ExtraFeatures {
     try {
       f();
     } catch(MyException2 e) {
+      e.getMessage();
+      e.getLocalizedMessage();
       e.printStackTrace(System.out);
     }
     try {

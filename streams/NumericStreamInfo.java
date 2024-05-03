@@ -22,3 +22,5 @@ public class NumericStreamInfo {
 IntSummaryStatistics{count=100, sum=50794, min=8,
 average=507.940000, max=998}
 */
+
+
