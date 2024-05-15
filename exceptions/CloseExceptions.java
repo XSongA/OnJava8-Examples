@@ -32,7 +32,8 @@ public class CloseExceptions {
       Second s = new Second()
     ) {
       System.out.println("In body");
-    } catch(CloseException e) {
+    }
+    catch(CloseException e) {
       System.out.println("Caught: " + e);
     }
   }

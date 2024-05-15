@@ -15,7 +15,8 @@ public class BodyException {
       Third t = new Third();
       new SecondExcept();
       System.out.println("End of body");
-    } catch(CE e) {
+    }
+    catch(CE e) {
       System.out.println("Caught: " + e);
     }
   }
