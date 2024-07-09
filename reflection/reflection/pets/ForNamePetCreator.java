@@ -30,7 +30,8 @@ public class ForNamePetCreator extends Creator {
     }
   }
   static { loader(); }
-  @Override public List<Class<? extends Pet>> types() {
+  @Override
+  public List<Class<? extends Pet>> types() {
     return types;
   }
 }

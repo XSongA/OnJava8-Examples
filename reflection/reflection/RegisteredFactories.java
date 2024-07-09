@@ -8,7 +8,8 @@ import java.util.function.*;
 import java.util.stream.*;
 
 class Part implements Supplier<Part> {
-  @Override public String toString() {
+  @Override
+  public String toString() {
     return getClass().getSimpleName();
   }
   static List<Supplier<? extends Part>> prototypes =
@@ -22,7 +23,8 @@ class Part implements Supplier<Part> {
       new GeneratorBelt()
     );
   private static Random rand = new Random(47);
-  @Override public Part get() {
+  @Override
+  public Part get() {
     int n = rand.nextInt(prototypes.size());
     return prototypes.get(n).get();
   }

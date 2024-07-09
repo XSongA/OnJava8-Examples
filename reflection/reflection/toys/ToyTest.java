@@ -45,6 +45,8 @@ public class ToyTest {
     for(Class face : c.getInterfaces())
       printInfo(face);
     Class up = c.getSuperclass();
+//    Class<Integer> integerClass = int.class;
+//    Class<Integer> type = Integer.TYPE;
     Object obj = null;
     try {
       // Requires public zero-argument constructor:

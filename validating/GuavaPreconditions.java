@@ -4,7 +4,9 @@
 // Visit http://OnJava8.com for more book information.
 // Demonstrating Guava Preconditions
 import java.util.function.*;
-import static com.google.common.base.Preconditions.*;
+
+import static org.gradle.internal.impldep.com.google.common.base.Preconditions.*;
+//import static com.google.common.base.Preconditions.*;
 
 public class GuavaPreconditions {
   static void test(Consumer<String> c, String s) {

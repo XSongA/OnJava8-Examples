@@ -52,7 +52,9 @@ public class PetCounter {
     System.out.println(counter);
   }
   public static void main(String[] args) {
-    new PetCounter().count(new ForNamePetCreator());
+    PetCounter petCounter = new PetCounter();
+    ForNamePetCreator forNamePetCreator = new ForNamePetCreator();
+    petCounter.count(forNamePetCreator);
   }
 }
 /* Output:

@@ -10,7 +10,7 @@ public class StreamInAndOut {
   public static void main(String[] args) {
     try(
       Stream<String> input =
-        Files.lines(Paths.get("StreamInAndOut.java"));
+        Files.lines(Paths.get("/Users/zss/Projects/OnJava8-Examples/files/StreamInAndOut.java"));
       PrintWriter output =
         new PrintWriter("StreamInAndOut.txt")
     ) {

@@ -5,7 +5,8 @@ package reflection;// reflection/PetCounter3.java
 // Using isInstance()
 import java.util.*;
 import java.util.stream.*;
-import onjava.*;
+//import onjava.*;
+import onjava.Pair;
 import reflection.pets.*;
 
 public class PetCounter3 {

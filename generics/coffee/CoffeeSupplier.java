@@ -1,9 +1,11 @@
-// generics/coffee/CoffeeSupplier.java
+package coffee;// generics/coffee/CoffeeSupplier.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java generics.coffee.CoffeeSupplier}
-package generics.coffee;
+//package generics.coffee;
+import coffee.Coffee;
+
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
@@ -11,8 +13,8 @@ import java.lang.reflect.InvocationTargetException;
 
 public class CoffeeSupplier
 implements Supplier<Coffee>, Iterable<Coffee> {
-  private Class<?>[] types = { Latte.class, Mocha.class,
-    Cappuccino.class, Americano.class, Breve.class, };
+  private Class<?>[] types = { coffee.Latte.class, coffee.Mocha.class,
+    coffee.Cappuccino.class, coffee.Americano.class, coffee.Breve.class, };
   private static Random rand = new Random(47);
   public CoffeeSupplier() {}
   // For iteration:

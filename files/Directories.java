@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import java.nio.file.*;
-import onjava.RmDir;
+//import onjava.RmDir;
 
 public class Directories {
   static Path test = Paths.get("test");
@@ -47,7 +47,7 @@ public class Directories {
       Path variant = makeVariant();
       if(!Files.exists(variant)) {
         Files.createDirectories(variant);
-        Files.copy(Paths.get("Directories.java"),
+        Files.copy(Paths.get("/Users/zss/Projects/OnJava8-Examples/files/Directories.java"),
           variant.resolve("File.txt"));
         Files.createTempFile(variant, null, null);
       }

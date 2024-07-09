@@ -8,11 +8,13 @@ public class PartsOfPaths {
   public static void main(String[] args) {
     System.out.println(System.getProperty("os.name"));
     Path p =
-      Paths.get("PartsOfPaths.java").toAbsolutePath();
+      Paths.get("/Users/zss/Projects/OnJava8-Examples/files/PartsOfPaths.java").toAbsolutePath();
     for(int i = 0; i < p.getNameCount(); i++)
       System.out.println(p.getName(i));
     System.out.println("ends with '.java': " +
       p.endsWith(".java"));
+    System.out.println("ends with 'PartsOfPaths.java': " +
+            p.endsWith("PartsOfPaths.java"));
     for(Path pp : p) {
       System.out.print(pp + ": ");
       System.out.print(p.startsWith(pp) + " : ");

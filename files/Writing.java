@@ -13,16 +13,16 @@ public class Writing {
     // Write bytes to a file:
     byte[] bytes = new byte[SIZE];
     rand.nextBytes(bytes);
-    Files.write(Paths.get("bytes.dat"), bytes);
+    Files.write(Paths.get("/Users/zss/Projects/OnJava8-Examples/bytes.dat"), bytes);
     System.out.println("bytes.dat: " +
-      Files.size(Paths.get("bytes.dat")));
+      Files.size(Paths.get("/Users/zss/Projects/OnJava8-Examples/bytes.dat")));
 
     // Write an iterable to a file:
     List<String> lines = Files.readAllLines(
-      Paths.get("../streams/Cheese.dat"));
-    Files.write(Paths.get("Cheese.txt"), lines);
+      Paths.get("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat"));
+    Files.write(Paths.get("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.dat"), lines);
     System.out.println("Cheese.txt: " +
-      Files.size(Paths.get("Cheese.txt")));
+      Files.size(Paths.get("/Users/zss/Projects/OnJava8-Examples/streams/Cheese.txt")));
   }
 }
 /* Output:

@@ -26,7 +26,7 @@ public class PathInfo {
     System.out.println(System.getProperty("os.name"));
     info(Paths.get(
       "C:", "path", "to", "nowhere", "NoFile.txt"));
-    Path p = Paths.get("PathInfo.java");
+    Path p = Paths.get("/Users/zss/Projects/OnJava8-Examples/files/PathInfo.java");
     info(p);
     Path ap = p.toAbsolutePath();
     info(ap);

@@ -15,7 +15,7 @@ public class GenericToyTest {
       ftc.getConstructor().newInstance();
     Class<? super FancyToy> up = ftc.getSuperclass();
     // This won't compile:
-    // Class<Toy> up2 = ftc.getSuperclass();
+//     Class<Toy> up2 = ftc.getSuperclass();
     // Only produces Object:
     Object obj = up.getConstructor().newInstance();
   }

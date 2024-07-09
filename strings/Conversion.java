@@ -15,7 +15,7 @@ public class Conversion {
     // f.format("d: %d%n", u);
     f.format("c: %c%n", u);
     f.format("b: %b%n", u);
-    // f.format("f: %f%n", u);
+//     f.format("f: %f%n", u);
     // f.format("e: %e%n", u);
     // f.format("x: %x%n", u);
     f.format("h: %h%n", u);

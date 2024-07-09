@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // {ExcludeFromTravisCI}
 import java.util.*;
-import onjava.Timer;
+//import onjava.Timer;
 
 public class BadMicroBenchmark {
   static final int SIZE = 250_000_000;

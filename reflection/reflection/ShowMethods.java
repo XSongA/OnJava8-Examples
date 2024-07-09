@@ -8,7 +8,7 @@ package reflection;// reflection/ShowMethods.java
 import java.lang.reflect.*;
 import java.util.regex.*;
 
-public class ShowMethods {
+ class ShowMethods {
   private static String usage =
     "usage:\n" +
     "ShowMethods qualified.class.name\n" +
@@ -17,6 +17,7 @@ public class ShowMethods {
     "To search for methods involving 'word'";
   private static Pattern p = Pattern.compile("\\w+\\.");
   public static void main(String[] args) {
+    args = new String[]{"reflection.ShowMethods"};
     if(args.length < 1) {
       System.out.println(usage);
       System.exit(0);

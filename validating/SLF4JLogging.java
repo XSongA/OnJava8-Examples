@@ -2,7 +2,10 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-import org.slf4j.*;
+//import org.slf4j.*;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SLF4JLogging {
   private static Logger log =
