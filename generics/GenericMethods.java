@@ -3,6 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
+import java.util.Arrays;
+
 public class GenericMethods {
   public <T> void f(T x) {
     System.out.println(x.getClass().getName());

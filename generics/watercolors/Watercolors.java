@@ -1,8 +1,8 @@
-// generics/watercolors/Watercolors.java
+package watercolors;// generics/watercolors/Watercolors.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-package generics.watercolors;
+//package generics.watercolors;
 
 public enum Watercolors {
   ZINC, LEMON_YELLOW, MEDIUM_YELLOW, DEEP_YELLOW,
