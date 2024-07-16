@@ -7,7 +7,6 @@ import java.util.*;
 import java.util.function.*;
 import java.util.stream.*;
 import enums.Outcome;
-import static enums.Outcome.*;
 import enums.Item;
 import enums.Paper;
 import enums.Scissors;

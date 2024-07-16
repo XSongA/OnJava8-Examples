@@ -171,10 +171,10 @@ onjava.Stack
 onjava.Suppliers
 onjava.TimedAbort
 onjava.Timer
-onjava.Tuple
-onjava.Tuple2
-onjava.Tuple3
-onjava.Tuple4
-onjava.Tuple5
+onjava.onjava.Tuple
+onjava.onjava.Tuple2
+onjava.onjava.Tuple3
+onjava.onjava.Tuple4
+onjava.onjava.Tuple5
 onjava.TypeCounter
 */

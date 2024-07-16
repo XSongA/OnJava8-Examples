@@ -6,4 +6,4 @@ package coffee;// generics/coffee/Americano.java
 
 import coffee.Coffee;
 
-public class Americano extends Coffee {}
+public class  Americano extends Coffee {}

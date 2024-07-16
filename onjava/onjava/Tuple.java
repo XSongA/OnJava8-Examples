@@ -1,9 +1,9 @@
-// onjava/Tuple.java
+package onjava;// onjava/onjava.Tuple.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-// Tuple library using type argument inference
-package onjava;
+// onjava.Tuple library using type argument inference
+//package onjava;
 
 public class Tuple {
   public static <A, B> Tuple2<A, B> tuple(A a, B b) {
