@@ -2,6 +2,7 @@
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
+
 import onjava.*;
 import java.util.*;
 import java.util.function.*;
@@ -27,14 +28,14 @@ interface FillArray {
 }
 
 public class PrimitiveGenericTest {
-  public static void main(String[] args) {
-    String[] strings = FillArray.fill(
-      new String[5], new Rand.String(9));
-    System.out.println(Arrays.toString(strings));
-    int[] integers = FillArray.fill(
-      new int[9], new Rand.Pint());
-    System.out.println(Arrays.toString(integers));
-  }
+    public static void main(String[] args) {
+        String[] strings = FillArray.fill(
+                new String[5], new Rand.String(9));
+        System.out.println(Arrays.toString(strings));
+        int[] integers = FillArray.fill(
+                new int[9], new Rand.Pint());
+        System.out.println(Arrays.toString(integers));
+    }
 }
 /* Output:
 [btpenpccu, xszgvgmei, nneeloztd, vewcippcy, gpoalkljl]

@@ -7,7 +7,7 @@
 public class Wildcards {
    // Raw argument:
   static void rawArgs(Holder holder, Object arg) {
-    //- holder.set(arg);
+    holder.set(arg);
     // warning: [unchecked] unchecked call to set(T)
     // as a member of the raw type Holder
     //     holder.set(arg);
@@ -17,7 +17,7 @@ public class Wildcards {
     // 1 warning
 
     // Can't do this; don't have any 'T':
-    // T t = holder.get();
+//    T t = holder.get();
 
     // OK, but type information is lost:
     Object obj = holder.get();
@@ -25,7 +25,7 @@ public class Wildcards {
   // Like rawArgs(), but errors instead of warnings:
   static void
   unboundedArg(Holder<?> holder, Object arg) {
-    //- holder.set(arg);
+//    holder.set(arg);
     // error: method set in class Holder<T>
     // cannot be applied to given types;
     //     holder.set(arg);
@@ -41,7 +41,7 @@ public class Wildcards {
     // 1 error
 
     // Can't do this; don't have any 'T':
-    // T t = holder.get();
+//    T t = holder.get();
 
     // OK, but type information is lost:
     Object obj = holder.get();
@@ -55,7 +55,7 @@ public class Wildcards {
   }
   static <T>
   T wildSubtype(Holder<? extends T> holder, T arg) {
-    //- holder.set(arg);
+//holder.set(arg);
     // error: method set in class Holder<T#2>
     // cannot be applied to given types;
     //     holder.set(arg);
@@ -113,7 +113,7 @@ public class Wildcards {
     unboundedArg(unbounded, lng);
     unboundedArg(bounded, lng);
 
-    //- Object r1 = exact1(raw);
+    Object r1 = exact1(raw);
     // warning: [unchecked] unchecked method invocation:
     // method exact1 in class Wildcards is applied
     // to given types
@@ -138,7 +138,7 @@ public class Wildcards {
     Object r3 = exact1(unbounded); // Must return Object
     Long r4 = exact1(bounded);
 
-    //- Long r5 = exact2(raw, lng);
+    Long r5 = exact2(raw, lng);
     // warning: [unchecked] unchecked method invocation:
     // method exact2 in class Wildcards is
     // applied to given types
@@ -161,7 +161,7 @@ public class Wildcards {
 
     Long r6 = exact2(qualified, lng);
 
-    //- Long r7 = exact2(unbounded, lng);
+//    Long r7 = exact2(unbounded, lng);
     // error: method exact2 in class Wildcards
     // cannot be applied to given types;
     //     Long r7 = exact2(unbounded, lng);
@@ -179,7 +179,7 @@ public class Wildcards {
     //     CAP#1 extends Object from capture of ?
     // 1 error
 
-    //- Long r8 = exact2(bounded, lng);
+//    Long r8 = exact2(bounded, lng);
     // error: method exact2 in class Wildcards
     // cannot be applied to given types;
     //      Long r8 = exact2(bounded, lng);
@@ -198,7 +198,7 @@ public class Wildcards {
     //       capture of ? extends Long
     // 1 error
 
-    //- Long r9 = wildSubtype(raw, lng);
+     Long r9 = wildSubtype(raw, lng);
     // warning: [unchecked] unchecked method invocation:
     // method wildSubtype in class Wildcards
     // is applied to given types
@@ -224,7 +224,7 @@ public class Wildcards {
     Object r11 = wildSubtype(unbounded, lng);
     Long r12 = wildSubtype(bounded, lng);
 
-    //- wildSupertype(raw, lng);
+    wildSupertype(raw, lng);
     // warning: [unchecked] unchecked method invocation:
     //   method wildSupertype in class Wildcards
     //   is applied to given types
@@ -247,7 +247,7 @@ public class Wildcards {
 
     wildSupertype(qualified, lng);
 
-    //- wildSupertype(unbounded, lng);
+//    wildSupertype(unbounded, lng);
     // error: method wildSupertype in class Wildcards
     // cannot be applied to given types;
     //     wildSupertype(unbounded, lng);
@@ -264,7 +264,7 @@ public class Wildcards {
     //     CAP#1 extends Object from capture of ?
     // 1 error
 
-    //- wildSupertype(bounded, lng);
+//    wildSupertype(bounded, lng);
     // error: method wildSupertype in class Wildcards
     // cannot be applied to given types;
     //     wildSupertype(bounded, lng);

@@ -10,6 +10,7 @@ class OrdinarySetter {
 }
 
 class DerivedSetter extends OrdinarySetter {
+//  @Override
   void set(Derived derived) {
     System.out.println("DerivedSetter.set(Derived)");
   }

@@ -21,15 +21,15 @@ public class Holder<T> {
     Holder<Apple> apple = new Holder<>(new Apple());
     Apple d = apple.get();
     apple.set(d);
-    // Holder<Fruit> Fruit = apple; // Cannot upcast
+//     Holder<Fruit> Fruit = apple; // Cannot upcast
     Holder<? extends Fruit> fruit = apple; // OK
     Fruit p = fruit.get();
     d = (Apple)fruit.get(); // Returns 'Object'
     try {
       Orange c = (Orange)fruit.get(); // No warning
     } catch(Exception e) { System.out.println(e); }
-    // fruit.set(new Apple()); // Cannot call set()
-    // fruit.set(new Fruit()); // Cannot call set()
+//     fruit.set(new Apple()); // Cannot call set()
+//     fruit.set(new Fruit()); // Cannot call set()
     System.out.println(fruit.equals(d)); // OK
   }
 }

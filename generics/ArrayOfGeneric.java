@@ -17,9 +17,9 @@ public class ArrayOfGeneric {
     gia = (Generic<Integer>[])new Generic[SIZE];
     System.out.println(gia.getClass().getSimpleName());
     gia[0] = new Generic<>();
-    //- gia[1] = new Object(); // Compile-time error
+    // gia[1] = new Object(); // Compile-time error
     // Discovers type mismatch at compile time:
-    //- gia[2] = new Generic<Double>();
+//    gia[2] = new Generic<Double>();
   }
 }
 /* Output:

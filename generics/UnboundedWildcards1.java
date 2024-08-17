@@ -11,9 +11,9 @@ public class UnboundedWildcards1 {
   static void assign1(List list) {
     list1 = list;
     list2 = list;
-    //- list3 = list;
+//    list3 = list;
     // warning: [unchecked] unchecked conversion
-    // list3 = list;
+//     list3 = list;
     //         ^
     // required: List<? extends Object>
     // found:    List
@@ -31,7 +31,7 @@ public class UnboundedWildcards1 {
   public static void main(String[] args) {
     assign1(new ArrayList());
     assign2(new ArrayList());
-    //- assign3(new ArrayList());
+    assign3(new ArrayList());
     // warning: [unchecked] unchecked method invocation:
     // method assign3 in class UnboundedWildcards1
     // is applied to given types
