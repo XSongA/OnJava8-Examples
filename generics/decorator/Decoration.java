@@ -3,7 +3,7 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // {java generics.decorator.Decoration}
-package generics.decorator;
+package decorator;
 import java.util.*;
 
 class Basic {
@@ -42,7 +42,7 @@ public class Decoration {
     TimeStamped t = new TimeStamped(new Basic());
     TimeStamped t2 = new TimeStamped(
       new SerialNumbered(new Basic()));
-    //- t2.getSerialNumber(); // Not available
+//    t2.getSerialNumber(); // Not available
     SerialNumbered s = new SerialNumbered(new Basic());
     SerialNumbered s2 = new SerialNumbered(
       new TimeStamped(new Basic()));
