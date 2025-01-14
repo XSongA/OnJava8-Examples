@@ -15,6 +15,7 @@ public class ArraySearching {
     show("Sorted array", a);
     while(true) {
       int r = rand.getAsInt();
+//      r = 1000;
       int location = Arrays.binarySearch(a, r);
       if(location >= 0) {
         System.out.println(

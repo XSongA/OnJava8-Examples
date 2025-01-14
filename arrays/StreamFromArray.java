@@ -4,6 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 import java.util.*;
 import onjava.*;
+import onjava.ConvertTo;
 
 public class StreamFromArray {
   public static void main(String[] args) {

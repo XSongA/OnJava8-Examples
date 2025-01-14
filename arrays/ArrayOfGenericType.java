@@ -8,9 +8,9 @@ public class ArrayOfGenericType<T> {
   @SuppressWarnings("unchecked")
   public ArrayOfGenericType(int size) {
     // error: generic array creation:
-    //- array = new T[size];
+//    array = new T[size];
     array = (T[])new Object[size]; // unchecked cast
   }
   // error: generic array creation:
-  //- public <U> U[] makeArray() { return new U[10]; }
+//  public <U> U[] makeArray() { return new U[10]; }
 }

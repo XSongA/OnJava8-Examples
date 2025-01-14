@@ -32,6 +32,15 @@ public class SimpleSetAll {
     Arrays.setAll(ia, n -> val++);             // [2]
     Arrays.setAll(la, n -> val++);
     Arrays.setAll(da, n -> val++);
+
+    show(ia);
+    show(la);
+    show(da);
+
+    Arrays.setAll(ia, n -> n*2);
+    Arrays.setAll(la, n -> n* 2L);
+    Arrays.setAll(da, n -> n*2);
+
     show(ia);
     show(la);
     show(da);

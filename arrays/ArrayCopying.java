@@ -51,6 +51,8 @@ public class ArrayCopying {
       Arrays.copyOf(d, d.length, Sup[].class); // [4]
     show(b);
 
+//    Arrays.setAll(b, Sup::new);
+
     // This "downcast" works fine:
     Sub[] d2 =
       Arrays.copyOf(b, b.length, Sub[].class); // [5]
