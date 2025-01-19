@@ -6,6 +6,7 @@
 import java.lang.reflect.*;
 import java.util.*;
 import onjava.*;
+import onjava.OSExecute;
 
 enum Explore { HERE, THERE }
 
@@ -38,7 +39,7 @@ public class Reflection {
     System.out.println(exploreMethods);
     // Decompile the code for the enum:
     OSExecute.command(
-      "javap -cp build/classes/java/main Explore");
+      "javap -cp out/production/classes/java/main Explore");
   }
 }
 /* Output:

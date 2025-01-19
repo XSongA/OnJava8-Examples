@@ -16,6 +16,7 @@ public class TrafficLight {
       case RED:    color = Signal.GREEN;
                    break;
       case GREEN:  color = Signal.YELLOW;
+//      return;
                    break;
       case YELLOW: color = Signal.RED;
                    break;

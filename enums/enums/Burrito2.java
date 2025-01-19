@@ -4,6 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // {java enums.Burrito2}
 package enums;
+//import static SpicinessEnum.*;
 import static enums.SpicinessEnum.*;
 
 public class Burrito2 {
